@@ -2,6 +2,13 @@
 
 :root{
     --font-primaria : 'Cotoris';
+
+
+    --cor-primaria: #5B0017;
+}
+
+.header-style{
+    background: var(--cor-primaria);
 }
 
 @font-face {
@@ -24,6 +31,13 @@ p, h1, h2, h3, a{
 #btn-mobile{
     display: none;
     margin-bottom: 10px; 
+    background: none;
+    border: none;
+    font-size: 2em;
+}
+
+.logo-style{
+    padding: 5px 0 5px 40px;
 }
 
 @media (max-width: 600px){
@@ -41,21 +55,47 @@ p, h1, h2, h3, a{
     }
 
    #menu {
-       display:none;
+       display: flex;
        width :100%;/* Faz com que o menu tenha largura total em telas pequenas */
        flex-direction: column; /* Faz com que os itens do menu sejam exibidos em uma coluna */
+       height: 0px;
+       transition: .6s;
        position: absolute;
        left: 0;
        padding-top: 2em;
        margin-top: 1.7em;
+       visibility: hidden;
+       overflow-y: hidden;
    }
    
    #nav-b.active #menu {
-       display:flex;/* Mostra o menu quando a classe active é adicionada ao id nav-b */
-       background-color: rgb(94, 61, 0);
+       height: calc(100vh - 70px);
+       background: var(--cor-primaria);
+       visibility: visible;
+       overflow-y: auto;
    }
 
    .logo-smal{
-        width: 14%;
+        width: 26%;
    }
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
