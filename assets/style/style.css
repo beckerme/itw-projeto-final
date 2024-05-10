@@ -1,3 +1,53 @@
-p{
+@import url(../icons/node_modules/bootstrap-icons/font/bootstrap-icons.css);
+
+:root{
+    --font-primaria : 'Cotoris';
+}
+
+@font-face {
+    font-family: "Cotoris";
+    src: url("fonts/Cotoris.ttf");
+}
+
+p, h1, h2, h3, a{
+    font-family: var(--font-primaria);
+}
+
+.nav-items{
     text-decoration: none;
+    color: #FFF;
+    font-size: 1.3125em;
+    font-weight: 400;
+    margin-right: 5.313em;
+    display: block; /* Faz com que os itens de navegação sejam exibidos em uma coluna */
+}
+
+#btn-mobile{
+    display: none;
+    margin-bottom: 10px; 
+}
+
+@media (max-width: 600px){
+    
+    .nav-items {
+        margin-right: 0; /* Remove a margem à direita para telas pequenas */
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 10px; /* Adiciona padding para espaçamento */
+        border-bottom: 1px solid #FFF; /* Adiciona borda entre os itens */
+    }
+
+    #btn-mobile{
+        display: block;
+        
+    }
+
+   #menu {
+       display:none;
+       width :100%;/* Faz com que o menu tenha largura total em telas pequenas */
+       flex-direction: column; /* Faz com que os itens do menu sejam exibidos em uma coluna */
+   }
+   
+   #nav-b.active #menu {
+       display:flex;/* Mostra o menu quando a classe active é adicionada ao id nav-b */
+   }
 }
