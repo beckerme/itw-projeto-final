@@ -32,7 +32,6 @@ p, h1, h2, h3, a{
 
 #btn-mobile{
     display: none;
-    margin-bottom: 10px; 
     background: none;
     border: none;
     font-size: 2em;
@@ -57,7 +56,6 @@ p, h1, h2, h3, a{
 
     #btn-mobile{
         display: block;
-        
     }
 
    #menu {
