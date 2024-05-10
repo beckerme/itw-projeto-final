@@ -10,7 +10,7 @@
 .header-style{
     background: var(--cor-primaria);
     margin: 0;
-    padding-left: 20px;
+    padding: 2em 0 1.5em 3em ;
 }
 
 @font-face {
@@ -43,6 +43,10 @@ p, h1, h2, h3, a{
 }
 
 @media (max-width: 600px){
+
+    .header-style{
+        padding: 2em;
+    }
     
     .nav-items {
         margin-right: 0; /* Remove a margem à direita para telas pequenas */
