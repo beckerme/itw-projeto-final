@@ -5,12 +5,7 @@
 
 
     --cor-primaria: #5B0017;
-}
-
-.header-style{
-    background: var(--cor-primaria);
-    margin: 0;
-    padding: 2em 0 1.5em 3em ;
+    --cor-font-primaria: #FFF;
 }
 
 @font-face {
@@ -18,8 +13,47 @@
     src: url("fonts/Cotoris.ttf");
 }
 
+.content-group {
+    margin-left: 41em;
+}
+
+.initial{
+    background: var(--cor-primaria);
+}
+
+.header-style{
+    margin: 0;
+    padding: 2em 0 1.5em 3em ;
+}
+
+#initPage{
+    background: url(../images/backgr-main-init-page.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.h1-group{
+    position: absolute;
+    top: 35%;
+    right: 36.5%;
+    z-index: 1;;
+}
+
+.h1-init{
+    font-size: 465%;
+    background: rgba(91, 0, 23, 0.70);
+    padding: 35px;
+}
+
+.banner-food{
+    position: relative;
+}
+
+
 p, h1, h2, h3, a{
     font-family: var(--font-primaria);
+    color: var(--cor-font-primaria);
 }
 
 .nav-items{
@@ -37,12 +71,19 @@ p, h1, h2, h3, a{
     font-size: 2em;
 }
 
-.logo-style{
-    padding: 0;
+.btn-menu{
+    background: none;
+    border: 1px solid #CC9D2F;
+    width: 10em;
+    padding: 5px;
+    color: #CC9D2F;
 }
 
-@media (max-width: 600px){
 
+@media (max-width: 600px){
+    .initial{
+        overflow-x: hidden;
+    }
     .header-style{
         padding: 2em;
     }
@@ -78,10 +119,36 @@ p, h1, h2, h3, a{
        background: var(--cor-primaria);
        visibility: visible;
        overflow-y: auto;
+       z-index: 10;
    }
 
    .logo-smal{
         width: 26%;
+   }
+
+   .banner-food{
+    display: block;
+   }
+
+   .h1-group{
+    display: block;
+    top: 35%;
+    left: 10%;
+    width: 75%; 
+   }
+
+   .h1-group p{
+    color: #fff;
+    font-weight: 600;
+   }
+
+   .h1-init{
+    font-size: 3rem;
+    padding: 5px;
+   }
+
+   .btn-menu{
+    width: 6em;
    }
 }
 
