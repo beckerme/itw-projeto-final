@@ -13,6 +13,10 @@
     src: url("fonts/Cotoris.ttf");
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .content-group {
     margin-left: 41em;
 }
@@ -62,6 +66,7 @@ p, h1, h2, h3, a{
     font-size: 1.3125em;
     font-weight: 400;
     margin-right: 5.313em;
+    transition: ease-in-out 0.5s;
 }
 
 #btn-mobile{
@@ -77,8 +82,94 @@ p, h1, h2, h3, a{
     width: 10em;
     padding: 5px;
     color: #CC9D2F;
+    transition: 0.5s;
 }
 
+.btn-menu:hover{
+    background: #CC9D2F;
+    color: #FFF;
+    transition: ease-in-out 0.5s;
+}
+
+.nav-items:hover{
+    color: #CC9D2F;
+    transition: ease-in-out 0.5s;
+}
+
+.btn-avenue {
+    background-color: #CC9D2F; 
+    color: #5B0017; 
+    border: none; 
+    width: 20%;
+    height: 4em;
+    font-family: var(--font-primaria); 
+    font-size: 25px; 
+    font-weight: bold; 
+    text-align: center;
+    border-radius: 0; 
+    cursor: pointer; 
+    display: inline-block; 
+    position: absolute;
+    transition: background-color 0.3s ease;
+    z-index: 1; 
+}
+
+.outra {
+    position: absolute;
+    width: 20%;
+    height: 6em;
+    top: 10px;
+    left: -10px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #CC9D2F;
+}
+
+.btn-container{
+    margin: 6em 0em 15em 0em;
+}
+
+.testimonial-section {
+    background-color: #4e0e0e; /* Background color similar to the image */
+    color: #000; /* Default text color */
+    border: 10px solid #a8731f; /* Golden border */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonial-content {
+    background-color: #d1a03c; /* Golden yellow background */
+    color: #000; /* Text color */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonial-content blockquote {
+    margin: 0;
+}
+
+.testimonial-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.testimonial-content footer {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-content footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-content iframe {
+    border: 5px solid #a8731f; /* Golden border around video */
+    border-radius: 5px;
+}
 
 @media (max-width: 600px){
     .initial{
