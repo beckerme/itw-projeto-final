@@ -97,7 +97,7 @@ p, h1, h2, h3, a{
 }
 
 .btn-avenue {
-    background-color: #CC9D2F; 
+    /* background-color: #CC9D2F; 
     color: #5B0017; 
     border: none; 
     width: 20%;
@@ -111,8 +111,21 @@ p, h1, h2, h3, a{
     display: inline-block; 
     position: absolute;
     transition: background-color 0.3s ease;
-    z-index: 1; 
+    z-index: 1;  */
+
+    background-color: #d4a517; /* cor do fundo */
+    color: #611313; /* cor do texto */
+    border: 2px solid #611313; /* borda */
+    padding: 10px 20px; /* espaçamento interno */
+    font-size: 1.2em; /* tamanho da fonte */
+    transition: all 0.3s ease; /* transição suave */
 }
+
+.btn-avenue:hover {
+    background-color: #b39413; /* cor de fundo ao passar o mouse */
+    color: #ffffff; /* cor do texto ao passar o mouse */
+}
+
 
 .outra {
     position: absolute;
@@ -130,9 +143,7 @@ p, h1, h2, h3, a{
 }
 
 .testimonial-section {
-    background-color: #4e0e0e; /* Background color similar to the image */
     color: #000; /* Default text color */
-    border: 10px solid #a8731f; /* Golden border */
     padding: 20px;
     border-radius: 5px;
 }
@@ -170,6 +181,20 @@ p, h1, h2, h3, a{
     border: 5px solid #a8731f; /* Golden border around video */
     border-radius: 5px;
 }
+
+.video-content {
+    display: flex;
+    justify-content: center; /* Centraliza o vídeo horizontalmente */
+}
+
+.row {
+    margin-bottom: 30px; /* Aumenta a distância entre as linhas/depoimentos */
+}
+
+.row:not(:last-child) {
+    margin-bottom: 30px; /* Aumenta a distância entre as linhas/depoimentos */
+}
+
 
 @media (max-width: 600px){
     .initial{
@@ -241,7 +266,13 @@ p, h1, h2, h3, a{
    .btn-menu{
     width: 6em;
    }
+
+   .t-mb{
+    margin-bottom: 10px;
+   }
+
 }
+
 
 @keyframes spin {
     from {
