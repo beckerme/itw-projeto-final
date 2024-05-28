@@ -1,9 +1,7 @@
 @import url(../icons/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 
-:root{
-    --font-primaria : 'Cotoris';
-
-
+:root {
+    --font-primaria: 'Cotoris';
     --cor-primaria: #5B0017;
     --cor-font-primaria: #FFF;
 }
@@ -13,7 +11,7 @@
     src: url("fonts/Cotoris.ttf");
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -21,46 +19,55 @@ body{
     margin-left: 41em;
 }
 
-.initial{
+.initial {
     background: var(--cor-primaria);
 }
 
-.header-style{
+.header-style {
     margin: 0;
-    padding: 2em 0 1.5em 3em ;
+    padding: 2em 0 1.5em 3em;
 }
 
-#initPage{
+#initPage {
     background: url(../images/backgr-main-init-page.png);
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: 10px;
 }
 
-.h1-group{
+.h1-group {
     position: absolute;
     top: 35%;
     right: 36.5%;
-    z-index: 1;;
+    z-index: 1;
 }
 
-.h1-init{
+.h1-init {
     font-size: 465%;
     background: rgba(91, 0, 23, 0.70);
     padding: 35px;
+    color: #fff;
 }
 
-.banner-food{
+p{
+    font-family: var(--font-primaria);
+}
+
+ul, li{
+    color: #fff;
+    line-height: 3em;
+}
+
+.banner-food {
     position: relative;
 }
 
-
-p, h1, h2, h3, a{
+p, h1, h2, h3, a {
     font-family: var(--font-primaria);
     color: var(--cor-font-primaria);
 }
 
-.nav-items{
+.nav-items {
     text-decoration: none;
     color: #FFF;
     font-size: 1.3125em;
@@ -69,14 +76,14 @@ p, h1, h2, h3, a{
     transition: ease-in-out 0.5s;
 }
 
-#btn-mobile{
+#btn-mobile {
     display: none;
     background: none;
     border: none;
     font-size: 2em;
 }
 
-.btn-menu{
+.btn-menu {
     background: none;
     border: 1px solid #CC9D2F;
     width: 10em;
@@ -85,47 +92,30 @@ p, h1, h2, h3, a{
     transition: 0.5s;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
     background: #CC9D2F;
     color: #FFF;
     transition: ease-in-out 0.5s;
 }
 
-.nav-items:hover{
+.nav-items:hover {
     color: #CC9D2F;
     transition: ease-in-out 0.5s;
 }
 
 .btn-avenue {
-    /* background-color: #CC9D2F; 
-    color: #5B0017; 
-    border: none; 
-    width: 20%;
-    height: 4em;
-    font-family: var(--font-primaria); 
-    font-size: 25px; 
-    font-weight: bold; 
-    text-align: center;
-    border-radius: 0; 
-    cursor: pointer; 
-    display: inline-block; 
-    position: absolute;
-    transition: background-color 0.3s ease;
-    z-index: 1;  */
-
-    background-color: #d4a517; /* cor do fundo */
-    color: #611313; /* cor do texto */
-    border: 2px solid #611313; /* borda */
-    padding: 10px 20px; /* espaçamento interno */
-    font-size: 1.2em; /* tamanho da fonte */
-    transition: all 0.3s ease; /* transição suave */
+    background-color: #d4a517;
+    color: #611313;
+    border: 2px solid #611313;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
 }
 
 .btn-avenue:hover {
-    background-color: #b39413; /* cor de fundo ao passar o mouse */
-    color: #ffffff; /* cor do texto ao passar o mouse */
+    background-color: #b39413;
+    color: #ffffff;
 }
-
 
 .outra {
     position: absolute;
@@ -138,19 +128,19 @@ p, h1, h2, h3, a{
     border: 2px solid #CC9D2F;
 }
 
-.btn-container{
+.btn-container {
     margin: 6em 0em 15em 0em;
 }
 
 .testimonial-section {
-    color: #000; /* Default text color */
+    color: #000;
     padding: 20px;
     border-radius: 5px;
 }
 
 .testimonial-content {
-    background-color: #d1a03c; /* Golden yellow background */
-    color: #000; /* Text color */
+    background-color: #d1a03c;
+    color: #000;
     padding: 20px;
     border-radius: 5px;
 }
@@ -178,101 +168,99 @@ p, h1, h2, h3, a{
 }
 
 .video-content iframe {
-    border: 5px solid #a8731f; /* Golden border around video */
+    border: 5px solid #a8731f;
     border-radius: 5px;
 }
 
 .video-content {
     display: flex;
-    justify-content: center; /* Centraliza o vídeo horizontalmente */
+    justify-content: center;
 }
 
 .row {
-    margin-bottom: 30px; /* Aumenta a distância entre as linhas/depoimentos */
+    margin-bottom: 30px;
 }
 
 .row:not(:last-child) {
-    margin-bottom: 30px; /* Aumenta a distância entre as linhas/depoimentos */
+    margin-bottom: 30px;
 }
 
-
-@media (max-width: 600px){
-    .initial{
+@media (max-width: 600px) {
+    .initial {
         overflow-x: hidden;
     }
-    .header-style{
+
+    .header-style {
         padding: 2em;
     }
-    
+
     .nav-items {
-        margin-right: 0; /* Remove a margem à direita para telas pequenas */
-        text-align: center; /* Alinha o texto ao centro */
-        padding: 10px; /* Adiciona padding para espaçamento */
-        border-bottom: 1px solid #FFF; /* Adiciona borda entre os itens */
+        margin-right: 0;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #FFF;
     }
 
-    #btn-mobile{
+    #btn-mobile {
         display: block;
     }
 
-   #menu {
-       display: flex;
-       width :100%;/* Faz com que o menu tenha largura total em telas pequenas */
-       flex-direction: column; /* Faz com que os itens do menu sejam exibidos em uma coluna */
-       height: 0px;
-       transition: .6s;
-       position: absolute;
-       left: 0;
-       top: 8em;
-       padding-top: 2em;
-       margin-top: 1em;
-       visibility: hidden;
-       overflow-y: hidden;
-   }
-   
-   #nav-b.active #menu {
-       height: calc(100vh - 70px);
-       background: var(--cor-primaria);
-       visibility: visible;
-       overflow-y: auto;
-       z-index: 10;
-   }
+    #menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 0px;
+        transition: .6s;
+        position: absolute;
+        left: 0;
+        top: 8em;
+        padding-top: 2em;
+        margin-top: 1em;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
 
-   .logo-smal{
+    #nav-b.active #menu {
+        height: calc(100vh - 70px);
+        background: var(--cor-primaria);
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 10;
+    }
+
+    .logo-smal {
         width: 26%;
-   }
+    }
 
-   .banner-food{
-    display: block;
-   }
+    .banner-food {
+        display: block;
+    }
 
-   .h1-group{
-    display: block;
-    top: 35%;
-    left: 10%;
-    width: 75%; 
-   }
+    .h1-group {
+        display: block;
+        top: 35%;
+        left: 10%;
+        width: 75%;
+    }
 
-   .h1-group p{
-    color: #fff;
-    font-weight: 600;
-   }
+    .h1-group p {
+        color: #fff;
+        font-weight: 600;
+    }
 
-   .h1-init{
-    font-size: 3rem;
-    padding: 5px;
-   }
+    .h1-init {
+        font-size: 3rem;
+        padding: 5px;
+    }
 
-   .btn-menu{
-    width: 6em;
-   }
+    .btn-menu {
+        width: 6em;
+    }
 
-   .t-mb{
-    margin-bottom: 10px;
-   }
-
+    .t-mb {
+        margin-bottom: 10px;
+    }
 }
-
 
 @keyframes spin {
     from {
@@ -292,4 +280,56 @@ p, h1, h2, h3, a{
     }
 }
 
+/* Estilo adicional para a página de menu */
 
+@keyframes slide-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-up {
+    animation: slide-in 0.6s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+.card-title {
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+.card-text {
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Adicione estas regras */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção da imagem enquanto a recorta */
+}
